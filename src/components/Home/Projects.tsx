@@ -11,7 +11,7 @@ const Projects = () => {
       id: 1,
       title: 'E-Commerce Platform',
       description: 'A full-featured e-commerce platform built with MERN stack',
-      image: '/projects/ecommerce.jpg',
+      image: '/project/ecommece.png',
       tech: ['Next.js', 'Node.js', 'MongoDB', 'Express'],
       github: 'https://github.com/ahmedaldaly/ecommerce-app',
       live: 'https://ecommerce-demo.com',
@@ -26,10 +26,10 @@ const Projects = () => {
       id: 2,
       title: 'Restaurant webside',
       description: 'Restaurant platform fully developed by Mern Technology',
-      image: '/projects/dashboard.jpg',
+      image: '/project/beit.png',
       tech: ['Next.js', 'TypeScript', 'Tailwind CSS', 'express js ','MongoDB'],
       github: 'https://github.com/ahmedaldaly/restaurant',
-      live: 'https://dashboard-demo.com',
+      live: 'https://restaurant-front-iota.vercel.app/en',
       features: [
         'User authentication',
         'Product management',
@@ -54,7 +54,7 @@ const Projects = () => {
       id: 4,
       title: 'Press platform',
       description: 'Webside Press is fully developed by Express js and MongoDB..',
-      image: '/projects/taskapp.jpg',
+      image: '/project/api.jfif',
       tech: [ 'express.js', 'MongoDB' ,'Joi'],
       github: 'https://github.com/ahmedaldaly/task',
       features: [
@@ -66,7 +66,7 @@ const Projects = () => {
       id: 5,
       title: 'Book Store',
       description: 'Webside Book Store is fully developed by Express js and MongoDB..',
-      image: '/projects/taskapp.jpg',
+      image: '/project/api.jfif',
       tech: [ 'express.js', 'MongoDB' ,'Joi'],
       github: 'https://github.com/ahmedaldaly/bookstorenode',
       features: [
@@ -77,7 +77,7 @@ const Projects = () => {
   ]
 
   return (
-    <section id="projects" className='w-full min-h-screen bg-[#242537] py-20 px-5'>
+    <section id="projects" className='w-full min-h-screen py-20 px-5'>
       <div className='max-w-7xl mx-auto'>
         <motion.div
           initial={{ opacity: 0, y: 50 }}

@@ -70,7 +70,7 @@ const Resume = () => {
             My academic and professional journey
           </p>
           <motion.a
-            href="/Ahmed-Eldaly-Resume.pdf"
+            href="/ahmed eldaly.pdf"
             download
             className='inline-flex items-center gap-2 bg-yellow-500 text-black px-6 py-3 rounded-full font-medium hover:bg-yellow-600 transition-colors'
             whileHover={{ scale: 1.05 }}
