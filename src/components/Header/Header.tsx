@@ -59,9 +59,12 @@ const Header = () => {
 
         {/* Desktop Button */}
         <div className='hidden md:block'>
+          <a href='https://wa.me/201017803491'> 
+
           <button className='px-6 py-2 bg-yellow-500 text-black rounded-md hover:bg-yellow-600 transition duration-300'>
             Project building
           </button>
+          </a>
         </div>
       </div>
 
