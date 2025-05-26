@@ -1,4 +1,5 @@
 import Hero from '@/components/Home/Hero';
+import Services from '@/components/Home/Services';
 import ParticlesBackground from '@/components/ParticlesBackground';
 import React from 'react';
 
@@ -11,9 +12,9 @@ const Page = () => {
       </div>
 
       {/* main content */}
-      <div className="relative z-10 px-18 overflow-hidden text-white">
+      <div className="relative z-10  overflow-hidden text-white">
        <Hero/>
-       
+       <Services/>
       </div>
     </main>
   );

@@ -82,7 +82,7 @@ const Hero = () => {
     }, [charIndex, titleIndex, titles])
 
     return (
-        <div className='w-full min-h-auto items-center min-xl:justify-between flex justify-center gap-20 max-xl:gap-5 flex-wrap'>
+        <div className='w-full min-h-auto items-center  max-md:justify-center flex justify-evenly  gap-20 max-lg:gap-3 flex-wrap'>
             <div className='max-lg:mt-20'>
                 <motion.p
                  initial ={{opacity:0 , x:'-100%'}}
@@ -127,7 +127,7 @@ const Hero = () => {
                  initial ={{opacity:0 , x:'100%'}}
                  whileInView={{opacity:1 ,x:0}}
                  transition={{duration:1 }}
-                src="/hero-author.png" className='relative top-0 max-xl:h-[80vh] max-lg:hidden h-[100vh]' alt="Hero" />
+                src="/الدالي 123.png" className='relative top-0  max-xl:h-[60vh]   h-[90vh]' alt="Hero" />
             </div>
         </div>
     )

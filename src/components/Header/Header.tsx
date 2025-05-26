@@ -22,13 +22,13 @@ const Header = () => {
   }, []);
 
   const navLinks = (
-    <div className='flex flex-col md:flex-row md:gap-5 items-center'>
-      <Link href='/' className='text-xl py-2 md:py-0'>Home</Link>
-      <Link href='#about' className='text-xl py-2 md:py-0'>About</Link>
-      <Link href='/' className='text-xl py-2 md:py-0'>Services</Link>
-      <Link href='/' className='text-xl py-2 md:py-0'>Projects</Link>
-      <Link href='/' className='text-xl py-2 md:py-0'>Resume</Link>
-      <Link href='/' className='text-xl py-2 md:py-0'>Contact</Link>
+    <div className='flex flex-col md:flex-row md:gap-6 items-center'>
+      <Link href='/' className='text-lg py-3 w-full text-center md:w-auto md:py-0 hover:text-yellow-400 transition-colors'>Home</Link>
+      <Link href='#about' className='text-lg py-3 w-full text-center md:w-auto md:py-0 hover:text-yellow-400 transition-colors'>About</Link>
+      <Link href='/' className='text-lg py-3 w-full text-center md:w-auto md:py-0 hover:text-yellow-400 transition-colors'>Services</Link>
+      <Link href='/' className='text-lg py-3 w-full text-center md:w-auto md:py-0 hover:text-yellow-400 transition-colors'>Projects</Link>
+      <Link href='/' className='text-lg py-3 w-full text-center md:w-auto md:py-0 hover:text-yellow-400 transition-colors'>Resume</Link>
+      <Link href='/' className='text-lg py-3 w-full text-center md:w-auto md:py-0 hover:text-yellow-400 transition-colors'>Contact</Link>
     </div>
   );
 
@@ -38,13 +38,13 @@ const Header = () => {
       initial={{ opacity: 0, y: -100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      className={`h-20 ${isScrolled ? 'fixed max-md:bg-black/30 max-md:backdrop-blur-2xl top-0 left-0 w-full bg-black/30 backdrop-blur-2xl z-50' : 'max-md:bg-black/30 max-md:backdrop-blur-2xl z-50 fixed  w-full'}  px-5 text-white`}
+      className={`max-md:bg-[#242537]/50 max-md:backdrop-blur-2xl fixed top-0 left-0 w-full z-50 px-5 text-white ${isScrolled ? 'bg-[#242537]/50 backdrop-blur-2xl' : 'bg-transparent'}`}
     >
-      <div className='flex justify-between  items-center h-24'>
-        <h1 className='text-3xl font-bold'>Ahmed</h1>
+      <div className='flex justify-between items-center h-20 max-w-7xl mx-auto'>
+        <h1 className='text-2xl md:text-3xl font-bold'>Ahmed</h1>
 
         {/* Desktop Links */}
-        <div className='hidden md:flex gap-5'>
+        <div className='hidden md:flex gap-6'>
           {navLinks}
         </div>
 
@@ -57,9 +57,9 @@ const Header = () => {
           {isMenuOpen ? <FiX /> : <FiMenu />}
         </button>
 
-        {/* Button on both */}
+        {/* Desktop Button */}
         <div className='hidden md:block'>
-          <button className='w-34 h-12 bg-yellow-500 text-black rounded-md cursor-pointer hover:bg-yellow-600 transition-all duration-300'>
+          <button className='px-6 py-2 bg-yellow-500 text-black rounded-md hover:bg-yellow-600 transition duration-300'>
             Project building
           </button>
         </div>
@@ -73,12 +73,14 @@ const Header = () => {
             animate={{ height: 'auto', opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.4 }}
-            className='md:hidden flex flex-col items-center gap-2 overflow-hidden'
+            className='md:hidden flex flex-col items-center  w-full overflow-hidden'
           >
             {navLinks}
-            <button className='w-34 h-12 mb-5 bg-yellow-500 text-black rounded-md cursor-pointer hover:bg-yellow-600 transition-all duration-300'>
-              Project building
-            </button>
+            <div className='w-full flex justify-center py-4'>
+              <button className='px-6 py-2 bg-yellow-500 text-black rounded-md hover:bg-yellow-600 transition duration-300'>
+                Project building
+              </button>
+            </div>
           </motion.div>
         )}
       </AnimatePresence>
