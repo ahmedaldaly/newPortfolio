@@ -82,7 +82,7 @@ const Hero = () => {
     }, [charIndex, titleIndex, titles])
 
     return (
-        <div className='w-full min-h-auto items-center max-md:justify-center flex justify-evenly gap-20 max-lg:gap-3 flex-wrap'>
+        <div className='w-full max-md:py-22 min-h-auto items-center max-md:justify-center flex justify-evenly gap-20 max-lg:gap-3 flex-wrap'>
             <div>
                 <motion.p
                     initial={{ opacity: 0, x: '-100%' }}
