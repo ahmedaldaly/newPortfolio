@@ -1,5 +1,10 @@
 import Hero from '@/components/Home/Hero';
 import Services from '@/components/Home/Services';
+import About from '@/components/Home/About';
+import Projects from '@/components/Home/Projects';
+import Resume from '@/components/Home/Resume';
+import Contact from '@/components/Home/Contact';
+import Footer from '@/components/Footer/Footer';
 import ParticlesBackground from '@/components/ParticlesBackground';
 import React from 'react';
 
@@ -12,9 +17,14 @@ const Page = () => {
       </div>
 
       {/* main content */}
-      <div className="relative z-10  overflow-hidden text-white">
-       <Hero/>
-       <Services/>
+      <div className="relative z-10 overflow-hidden text-white">
+        <Hero/>
+        <About/>
+        <Services/>
+        <Projects/>
+        <Resume/>
+        <Contact/>
+        <Footer/>
       </div>
     </main>
   );

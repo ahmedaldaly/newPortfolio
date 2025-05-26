@@ -18,7 +18,7 @@ const Services = () => {
     },
     {
       id: 2,
-      title: 'UI/UX Design',
+      title: 'UI/ Development',
       description: 'Creating beautiful and intuitive user interfaces with modern design principles',
       icon: <MdOutlineDesignServices className="text-4xl" />,
       tech: ['Tailwind CSS', 'Framer Motion', 'Material UI']
@@ -54,7 +54,7 @@ const Services = () => {
   ]
 
   return (
-    <section className='w-full min-h-screen bg-[#242537] py-20 px-5'>
+    <section id="services" className='w-full min-h-screen  py-20 px-5'>
       <div className='max-w-7xl mx-auto'>
         <motion.div 
           initial={{ opacity: 0, y: 50 }}

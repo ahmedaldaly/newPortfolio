@@ -25,10 +25,10 @@ const Header = () => {
     <div className='flex flex-col md:flex-row md:gap-6 items-center'>
       <Link href='/' className='text-lg py-3 w-full text-center md:w-auto md:py-0 hover:text-yellow-400 transition-colors'>Home</Link>
       <Link href='#about' className='text-lg py-3 w-full text-center md:w-auto md:py-0 hover:text-yellow-400 transition-colors'>About</Link>
-      <Link href='/' className='text-lg py-3 w-full text-center md:w-auto md:py-0 hover:text-yellow-400 transition-colors'>Services</Link>
-      <Link href='/' className='text-lg py-3 w-full text-center md:w-auto md:py-0 hover:text-yellow-400 transition-colors'>Projects</Link>
-      <Link href='/' className='text-lg py-3 w-full text-center md:w-auto md:py-0 hover:text-yellow-400 transition-colors'>Resume</Link>
-      <Link href='/' className='text-lg py-3 w-full text-center md:w-auto md:py-0 hover:text-yellow-400 transition-colors'>Contact</Link>
+      <Link href='/#services' className='text-lg py-3 w-full text-center md:w-auto md:py-0 hover:text-yellow-400 transition-colors'>Services</Link>
+      <Link href='/#projects' className='text-lg py-3 w-full text-center md:w-auto md:py-0 hover:text-yellow-400 transition-colors'>Projects</Link>
+      <Link href='/#resume' className='text-lg py-3 w-full text-center md:w-auto md:py-0 hover:text-yellow-400 transition-colors'>Resume</Link>
+      <Link href='/#contact' className='text-lg py-3 w-full text-center md:w-auto md:py-0 hover:text-yellow-400 transition-colors'>Contact</Link>
     </div>
   );
 
