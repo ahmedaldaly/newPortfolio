@@ -1,3 +1,7 @@
+'use client'
+
+import { useEffect, useState } from 'react'
+import Loading from '@/components/Loading'
 import Hero from '@/components/Home/Hero';
 import Services from '@/components/Home/Services';
 import About from '@/components/Home/About';
@@ -8,7 +12,21 @@ import Footer from '@/components/Footer/Footer';
 import ParticlesBackground from '@/components/ParticlesBackground';
 import React from 'react';
 
-const Page = () => {
+export default function Home() {
+  const [isLoading, setIsLoading] = useState(true)
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false)
+    }, 2000)
+
+    return () => clearTimeout(timer)
+  }, [])
+
+  if (isLoading) {
+    return <Loading />
+  }
+
   return (
     <main className="relative min-h-[120vh]">
       {/* background particles */}
@@ -28,6 +46,4 @@ const Page = () => {
       </div>
     </main>
   );
-};
-
-export default Page;
+}
