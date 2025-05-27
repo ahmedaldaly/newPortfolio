@@ -13,8 +13,8 @@ const Projects = () => {
       description: 'A full-featured e-commerce platform built with MERN stack',
       image: '/project/ecommece.png',
       tech: ['Next.js', 'Node.js', 'MongoDB', 'Express'],
-      github: 'https://github.com/ahmedaldaly/ecommerce-app',
-      live: 'https://ecommerce-demo.com',
+      github: 'https://github.com/ahmedaldaly/ecommerce',
+      live: 'https://ecommerce-front-orcin-ten.vercel.app',
       features: [
         'User authentication',
         'Product management',
