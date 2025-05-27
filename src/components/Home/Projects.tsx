@@ -29,7 +29,7 @@ const Projects = () => {
       image: '/project/beit.png',
       tech: ['Next.js', 'TypeScript', 'Tailwind CSS', 'express js ','MongoDB'],
       github: 'https://github.com/ahmedaldaly/restaurant',
-      live: 'https://restaurant-front-iota.vercel.app/en',
+      live: 'https://restaurant-front-rho.vercel.app/en',
       features: [
         'User authentication',
         'Product management',
