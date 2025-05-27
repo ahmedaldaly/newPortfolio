@@ -24,7 +24,7 @@ const Projects = () => {
     },
     {
       id: 2,
-      title: 'Restaurant webside',
+      title: 'Restaurant website',
       description: 'Restaurant platform fully developed by Mern Technology',
       image: '/project/beit.png',
       tech: ['Next.js', 'TypeScript', 'Tailwind CSS', 'express js ','MongoDB'],

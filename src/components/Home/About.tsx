@@ -45,7 +45,7 @@ const About = () => {
 
   return (
     <section id="about" className="w-full min-h-screen">
-      <div className="w-full px-4 md:px-20 mx-auto bg-[#242537] py-10 md:py-20">
+      <div className="w-full px-4 md:px-20 mx-auto bg-[#242537] py-10 ">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
