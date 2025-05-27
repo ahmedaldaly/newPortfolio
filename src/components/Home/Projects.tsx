@@ -54,7 +54,7 @@ const Projects = () => {
       id: 4,
       title: 'Press platform',
       description: 'Webside Press is fully developed by Express js and MongoDB..',
-      image: '/project/api.jfif',
+      image: '/project/api.png',
       tech: [ 'express.js', 'MongoDB' ,'Joi'],
       github: 'https://github.com/ahmedaldaly/task',
       features: [
@@ -66,7 +66,7 @@ const Projects = () => {
       id: 5,
       title: 'Book Store',
       description: 'Webside Book Store is fully developed by Express js and MongoDB..',
-      image: '/project/api.jfif',
+      image: '/project/api.png',
       tech: [ 'express.js', 'MongoDB' ,'Joi'],
       github: 'https://github.com/ahmedaldaly/bookstorenode',
       features: [
