@@ -21,7 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${zillaSlab.variable} antialiased`}>
+      <body className={`${zillaSlab.variable} antialiased bg-[#242537]`}>
         <Header />
         {children}
       </body>
