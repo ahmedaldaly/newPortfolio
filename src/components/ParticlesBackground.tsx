@@ -5,16 +5,16 @@ import Particles from 'react-tsparticles';
 import { loadSlim } from 'tsparticles-slim';
 
 export default function ParticlesBackground() {
-  const [particleNumber, setParticleNumber] = useState(100);
+  const [particleNumber, setParticleNumber] = useState(50);
 
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth < 768) {
-        setParticleNumber(30);  // موبايل: أقل
+        setParticleNumber(15);
       } else if (window.innerWidth < 1024) {
-        setParticleNumber(60);  // تابلت: متوسط
+        setParticleNumber(30);
       } else {
-        setParticleNumber(100); // ديسكتوب: كامل
+        setParticleNumber(50);
       }
     };
 
@@ -39,27 +39,35 @@ export default function ParticlesBackground() {
           number: { value: particleNumber },
           color: { value: '#ffffff' },
           shape: { type: 'circle' },
-          opacity: { value: 0.5 },
-          size: { value: 3 },
-          move: { enable: true, speed: 1 },
+          opacity: { value: 0.3 },
+          size: { value: 2 },
+          move: { 
+            enable: true, 
+            speed: 0.5,
+            direction: "none",
+            random: false,
+            straight: false,
+            outModes: { default: "out" }
+          },
           links: {
             enable: true,
-            distance: 150,
+            distance: 100,
             color: '#ffffff',
-            opacity: 0.4,
-            width: 1,
+            opacity: 0.2,
+            width: 0.5,
           },
         },
         interactivity: {
           events: {
-            onHover: { enable: true, mode: 'repulse' },
+            onHover: { enable: true, mode: 'grab' },
             onClick: { enable: true, mode: 'push' },
           },
           modes: {
-            repulse: { distance: 100 },
-            push: { quantity: 4 },
+            grab: { distance: 70 },
+            push: { quantity: 2 },
           },
         },
+        fpsLimit: 30,
       }}
     />
   );
