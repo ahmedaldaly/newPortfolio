@@ -73,7 +73,19 @@ const Projects = () => {
         'User authentication',
         'Books management',
       ]
-    }
+    },
+    {
+      id: 6,
+      title: 'LMS',
+      description: 'Webside LMS is fully developed by Express js and MongoDB..',
+      image: '/project/api.png',
+      tech: [ 'express.js', 'MongoDB' ,'Joi'],
+      github: 'https://github.com/ahmedaldaly/Learning-platform',
+      features: [
+        'User authentication',
+        'Courses management',
+      ]
+    },
   ]
 
   return (
