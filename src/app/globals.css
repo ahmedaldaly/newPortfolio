@@ -2,3 +2,6 @@
 body {
   font-family: var(--font-zilla-slab);
 }
+.image {
+  filter: drop-shadow(1px -5px 15px rgb(176, 176, 26));
+}

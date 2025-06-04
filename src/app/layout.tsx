@@ -12,6 +12,7 @@ const zillaSlab = Zilla_Slab({
 export const metadata: Metadata = {
   title: "Ahmed Eldaly - Full Stack Developer",
   description: "Full Stack Developer Portfolio",
+  icons : '/eldaly.png'
 };
 
 export default function RootLayout({

@@ -132,7 +132,7 @@ const Hero = () => {
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 1 }}
                     src="/الدالي 123.png"
-                    className='relative top-0 max-xl:h-[60vh] h-[90vh]'
+                    className='relative top-0 max-xl:h-[60vh] h-[90vh] image'
                     alt="Hero"
                 />
             </div>

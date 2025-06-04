@@ -21,14 +21,26 @@ const Header = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement>, targetId: string) => {
+    e.preventDefault();
+    const targetElement = document.querySelector(targetId);
+    if (targetElement) {
+      targetElement.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+      setIsMenuOpen(false); // Close mobile menu after clicking
+    }
+  };
+
   const navLinks = (
     <div className='flex flex-col md:flex-row md:gap-6 items-center'>
-      <Link href='/' className='text-lg py-3 w-full text-center md:w-auto md:py-0 hover:text-yellow-400 transition-colors'>Home</Link>
-      <Link href='#about' className='text-lg py-3 w-full text-center md:w-auto md:py-0 hover:text-yellow-400 transition-colors'>About</Link>
-      <Link href='/#services' className='text-lg py-3 w-full text-center md:w-auto md:py-0 hover:text-yellow-400 transition-colors'>Services</Link>
-      <Link href='/#projects' className='text-lg py-3 w-full text-center md:w-auto md:py-0 hover:text-yellow-400 transition-colors'>Projects</Link>
-      <Link href='/#resume' className='text-lg py-3 w-full text-center md:w-auto md:py-0 hover:text-yellow-400 transition-colors'>Resume</Link>
-      <Link href='/#contact' className='text-lg py-3 w-full text-center md:w-auto md:py-0 hover:text-yellow-400 transition-colors'>Contact</Link>
+      <Link href='/' onClick={(e) => handleSmoothScroll(e, '#home')} className='text-lg py-3 w-full text-center md:w-auto md:py-0 hover:text-yellow-400 transition-colors'>Home</Link>
+      <Link href='#about' onClick={(e) => handleSmoothScroll(e, '#about')} className='text-lg py-3 w-full text-center md:w-auto md:py-0 hover:text-yellow-400 transition-colors'>About</Link>
+      <Link href='#services' onClick={(e) => handleSmoothScroll(e, '#services')} className='text-lg py-3 w-full text-center md:w-auto md:py-0 hover:text-yellow-400 transition-colors'>Services</Link>
+      <Link href='#projects' onClick={(e) => handleSmoothScroll(e, '#projects')} className='text-lg py-3 w-full text-center md:w-auto md:py-0 hover:text-yellow-400 transition-colors'>Projects</Link>
+      <Link href='#resume' onClick={(e) => handleSmoothScroll(e, '#resume')} className='text-lg py-3 w-full text-center md:w-auto md:py-0 hover:text-yellow-400 transition-colors'>Resume</Link>
+      <Link href='#contact' onClick={(e) => handleSmoothScroll(e, '#contact')} className='text-lg py-3 w-full text-center md:w-auto md:py-0 hover:text-yellow-400 transition-colors'>Contact</Link>
     </div>
   );
 

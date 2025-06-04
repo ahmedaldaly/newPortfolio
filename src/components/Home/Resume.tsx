@@ -42,11 +42,16 @@ const Resume = () => {
   const skills = {
     technical: [
       { name: 'React.js', level: 90 },
+      { name: 'tailwindCss', level: 95 },
       { name: 'Node.js', level: 85 },
       { name: 'JavaScript', level: 90 },
       { name: 'MongoDB', level: 80 },
       { name: 'TypeScript', level: 75 },
-      { name: 'Next.js', level: 85 }
+      { name: 'Next.js', level: 85 },
+      { name: 'Nest.js', level: 75 },
+      { name: 'express.js', level: 90 },
+      { name: 'Socket.io', level: 80 },
+      { name: 'FireBase', level: 70 },
     ],
     soft: [
       { name: 'Problem Solving', level: 70 },
