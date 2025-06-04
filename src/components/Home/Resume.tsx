@@ -48,7 +48,6 @@ const Resume = () => {
       { name: 'MongoDB', level: 80 },
       { name: 'TypeScript', level: 75 },
       { name: 'Next.js', level: 85 },
-      { name: 'Nest.js', level: 75 },
       { name: 'express.js', level: 90 },
       { name: 'Socket.io', level: 80 },
       { name: 'FireBase', level: 70 },
